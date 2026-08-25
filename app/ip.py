@@ -1,4 +1,4 @@
-"""Определение реального IP клиента"""
+"""Определение IP клиента"""
 from __future__ import annotations
 
 from fastapi import Request

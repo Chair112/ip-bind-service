@@ -1,4 +1,3 @@
-"""Главный модуль FastAPI-приложения."""
 from __future__ import annotations
 
 import asyncio
@@ -34,7 +33,6 @@ async def lifespan(app: FastAPI):
         task.cancel()
 
 
-# Создаём само приложение
 app = FastAPI(title="IP Bind Service", lifespan=lifespan)
 
 

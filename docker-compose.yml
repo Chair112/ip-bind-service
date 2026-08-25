@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  api:
+    build: .                         
+    container_name: ip-bind-service  
+    ports:
+      - "8000:8000"                  
+    environment:
+      - TTL_SECONDS=300               
+    restart: unless-stopped           
